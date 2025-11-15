@@ -106,35 +106,35 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: `Interactive Excel dashboard analyzing Costa Caffe sales, customer behavior, and product popularity. Features dynamic charts,
  PivotTables, and slicers for clear insights and trends.`,
             link: "https://github.com/essam1212/coffe-Shop",
-            thumb: "imgs/cafe.PNG"
+            thumb: "imgs/cafe.png"
         },
         {
             title: `📚Online Courses<br>(Power BI)`,
             desc: `An interactive Power BI dashboard analyzing the performance, pricing, and content distribution of online courses. It reveals key insights into subscriber behavior, subject popularity, and value perception —
              helping guide smarter decisions in content creation, pricing strategy, and course optimization.`,
             link: "https://github.com/essam1212/Online-Courses",
-            thumb: "imgs/Online Courses.PNG"
+            thumb: "imgs/online_courses.png"
         },
         {
             title: "📚  Seles-Store <br>(Power-Bi)",
             desc: `A Power BI interactive sales dashboard designed to analyze key KPIs across products, customers, regions, and shipping modes. It transforms complex sales data into clear visual insights, helping highlight 
             top-performing categories, profitable regions, and improvement opportunities for smarter business decisions.`,
             link: "https://github.com/essam1212/Seles-Store-By-Power-Bi/tree/main",
-            thumb: "imgs/Sales Store.PNG"
+            thumb: "imgs/sales_store.png"
         },
         {
             title: "📚 Service Branch <br>( SQL & Power BI )",
             desc: `A Power BI dashboard built on SQL Server data to analyze service performance across regions, departments, and clients. It delivers clear insights on revenue, 
             hours worked, and business trends to support data-driven decision making.`,
             link: "https://github.com/essam1212/Services-Data-By-SQL-Power-Bi-",
-            thumb: "imgs/services data2.PNG"
+            thumb: "imgs/services_data.png"
         },
         {
             title: "📚 Sales Dashboard (Excel)",
             desc: `An interactive Excel sales dashboard built using Pivot Tables, Slicers, and Charts to analyze key sales metrics across branches, categories, and payment methods. It transforms raw data into clear insights on performance, 
             customer trends, and revenue distribution to support smarter business decisions.`,
             link: "https://github.com/essam1212/Seles-Dashboard-By-Excel",
-            thumb: "imgs/Seles Dashboard by excel.PNG"
+            thumb: "imgs/seles_dashboard.png"
         },
 
     ];
