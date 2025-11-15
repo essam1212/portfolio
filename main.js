@@ -102,6 +102,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Projects data and rendering (existing logic)
     const projectsData = [
         {
+            title: ` Costa Caffe (Excel)`,
+            desc: `Interactive Excel dashboard analyzing Costa Caffe sales, customer behavior, and product popularity. Features dynamic charts,
+ PivotTables, and slicers for clear insights and trends.`,
+            link: "https://github.com/essam1212/coffe-Shop",
+            thumb: "imgs/cafe.PNG"
+        },
+        {
             title: `📚Online Courses<br>(Power BI)`,
             desc: `An interactive Power BI dashboard analyzing the performance, pricing, and content distribution of online courses. It reveals key insights into subscriber behavior, subject popularity, and value perception —
              helping guide smarter decisions in content creation, pricing strategy, and course optimization.`,
