@@ -102,6 +102,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Projects data and rendering (existing logic)
     const projectsData = [
         {
+            title: `Hospital Performance <br> ( SQL & Power BI )`,
+            desc: `This project delivers a comprehensive $\text{Power BI}$ solution that transforms raw hospital data into actionable insights across Finance, Operations, and Patient Analytics. The goal is to optimize decision-making, enhance operational efficiency (e.g., workload and resource planning),
+             and drive profitability by understanding key performance drivers and patient demographics.`,
+            link: "https://app.powerbi.com/view?r=eyJrIjoiN2MyZWMyZmUtZmMxOS00ODMwLWI4YzEtZGFkNGQ4YTkxOTBmIiwidCI6IjJiYjZlNWJjLWMxMDktNDdmYi05NDMzLWMxYzZmNGZhMzNmZiIsImMiOjl9",
+            thumb: "imgs/hospital.png"
+        },
+        {
             title: ` Costa Caffe (Excel)`,
             desc: `Interactive Excel dashboard analyzing Costa Caffe sales, customer behavior, and product popularity. Features dynamic charts,
  PivotTables, and slicers for clear insights and trends.`,
@@ -112,21 +119,21 @@ document.addEventListener('DOMContentLoaded', () => {
             title: `📚Online Courses<br>(Power BI)`,
             desc: `An interactive Power BI dashboard analyzing the performance, pricing, and content distribution of online courses. It reveals key insights into subscriber behavior, subject popularity, and value perception —
              helping guide smarter decisions in content creation, pricing strategy, and course optimization.`,
-            link: "https://github.com/essam1212/Online-Courses",
+            link: "https://app.powerbi.com/view?r=eyJrIjoiOGNlOWEyYWEtMmUzNy00YTBmLWFjMzctNjQ0MWQ5ODcxMTBkIiwidCI6IjJiYjZlNWJjLWMxMDktNDdmYi05NDMzLWMxYzZmNGZhMzNmZiIsImMiOjl9",
             thumb: "imgs/online_courses.png"
         },
         {
             title: "📚  Seles-Store <br>(Power-Bi)",
             desc: `A Power BI interactive sales dashboard designed to analyze key KPIs across products, customers, regions, and shipping modes. It transforms complex sales data into clear visual insights, helping highlight 
             top-performing categories, profitable regions, and improvement opportunities for smarter business decisions.`,
-            link: "https://github.com/essam1212/Seles-Store-By-Power-Bi/tree/main",
+            link: "https://app.powerbi.com/view?r=eyJrIjoiMmYzMjYzYjktOWEzMi00NDRlLWFjNTMtNWFlZWJhODIxMjA4IiwidCI6IjJiYjZlNWJjLWMxMDktNDdmYi05NDMzLWMxYzZmNGZhMzNmZiIsImMiOjl9",
             thumb: "imgs/sales_store.png"
         },
         {
             title: "📚 Service Branch <br>( SQL & Power BI )",
             desc: `A Power BI dashboard built on SQL Server data to analyze service performance across regions, departments, and clients. It delivers clear insights on revenue, 
             hours worked, and business trends to support data-driven decision making.`,
-            link: "https://github.com/essam1212/Services-Data-By-SQL-Power-Bi-",
+            link: "https://app.powerbi.com/view?r=eyJrIjoiOTUxMTcyZTktNWUzNi00ZGExLWJjYmUtY2MwMzgzYzRlMzUyIiwidCI6IjJiYjZlNWJjLWMxMDktNDdmYi05NDMzLWMxYzZmNGZhMzNmZiIsImMiOjl9",
             thumb: "imgs/services_data.png"
         },
         {
