@@ -1,235 +1,334 @@
-<!-- ...existing code... -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>My Portfolio — Data Analyst</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta
+      name="keywords"
+      content="Data Analyst, Power BI, Portfolio, Dashboard, Business Intelligence, Essam Ali"
+    />
+    <meta
+      name="description"
+      content="Portfolio of Essam Ali, Data Analyst & Business Intelligence Developer. Explore dashboards, Power BI projects, visualizations, and professional work samples."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Essam Ali | Data Analyst Portfolio" />
+    <meta
+      property="og:description"
+      content="Professional portfolio showcasing Power BI dashboards, Excel reports, and analytics projects."
+    />
+    <meta property="og:image" content="imgs/hero.jpeg" />
+    <meta
+      property="og:url"
+      content="https://essam1212.github.io/portfolio/index.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <title>Essam Ali | Data Analyst & BI Developer Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
 
     <!-- Apply saved theme early to avoid flash -->
     <style>
-        /* map html.dark to body variables early */
-        html.dark body {
-            --bg: #071022;
-            --panel: #0b1320;
-            --text: #E6EEF6;
-            --muted: #9fb0c9;
-            --nav-bg: #07172a;
-            --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
-        }
+      /* map html.dark to body variables early */
+      html.dark body {
+        --bg: #071022;
+        --panel: #0b1320;
+        --text: #e6eef6;
+        --muted: #9fb0c9;
+        --nav-bg: #07172a;
+        --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      }
     </style>
     <script>
-        (function () {
-            const saved = localStorage.getItem('siteTheme');
-            if (saved === 'dark') {
-                document.documentElement.classList.add('dark'); // apply early
-            }
-        })();
+      (function () {
+        const saved = localStorage.getItem("siteTheme");
+        if (saved === "dark") {
+          document.documentElement.classList.add("dark"); // apply early
+        }
+      })();
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header class="site-header">
-        <div class="container header-inner">
-            <div class="logo"><a href="index.html">My <span class="logo-highlight">Portfolio</span></a></div>
-
-            <nav class="nav" id="navMenu">
-                <a href="#home">Home</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-            </nav>
-
-            <div class="header-actions">
-                <button id="theme-toggle" class="theme-toggle" aria-label="toggle theme">
-                    <i class="fa-regular fa-moon"></i>
-                </button>
-
-                <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
+      <div class="container header-inner">
+        <div class="logo">
+          <a href="index.html"
+            >My <span class="logo-highlight">Portfolio</span></a
+          >
         </div>
 
-        <div id="mobileDropdown" class="mobile-dropdown" aria-hidden="true">
-            <a href="#home">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+        <nav class="nav" id="navMenu">
+          <a href="#home">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a href="#certificates">Certificates</a>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="toggle theme"
+          >
+            <i class="fa-regular fa-moon"></i>
+          </button>
+
+          <button
+            id="menu-toggle"
+            class="menu-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
+      </div>
+
+      <div id="mobileDropdown" class="mobile-dropdown" aria-hidden="true">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#certificates">Certificates</a>
+      </div>
     </header>
 
     <!-- HERO -->
     <section id="home" class="hero section">
-        <div class="container hero-grid">
-            <div class="hero-text" data-aos="fade-up" data-aos-delay="100">
-                <h1>ESSAM ALI ELSAYED</h1>
-                <p class="subtitle">Data Analyst</p>
-                <p class="hero-des">
-                    I turn raw data into clear, actionable insights. I build interactive dashboards, automate reporting,
-                    and deliver analyses that help teams make data-driven decisions.
-                </p>
+      <div class="container hero-grid">
+        <div class="hero-text" data-aos="fade-up" data-aos-delay="100">
+          <h1>ESSAM ALI ELSAYED</h1>
+          <p class="subtitle">Data Analyst</p>
+          <p class="hero-des">
+            I turn raw data into clear, actionable insights. I build interactive
+            dashboards, automate reporting, and deliver analyses that help teams
+            make data-driven decisions.
+          </p>
 
-                <div class="hero-ctas">
-                    <a class="btn btn-primary" href="imgs/Essam_Ali_Data_Analyst_Resume.pdf" id="downloadCv">
-                        <i class="fa-solid fa-file-arrow-down"></i>My Resume
-                    </a>
-                    <a class="btn btn-outline" href="#projects">View Projects</a>
-                </div>
-            </div>
-
-            <div class="hero-photo" data-aos="zoom-in" data-aos-delay="200">
-                <img src="imgs/hero.jpeg" alt="Essam Ali Elsayed" />
-            </div>
+          <div class="hero-ctas">
+            <a
+              class="btn btn-primary"
+              href="imgs/Essam_Ali_Data_Analyst_Resume.pdf"
+              id="downloadCv"
+            >
+              <i class="fa-solid fa-file-arrow-down"></i>My Resume
+            </a>
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-primary" href="#certificates"
+              >View Certificates</a
+            >
+          </div>
         </div>
+
+        <div class="hero-photo" data-aos="zoom-in" data-aos-delay="200">
+          <img src="imgs/hero.jpeg" alt="Essam Ali Elsayed" />
+        </div>
+      </div>
     </section>
 
     <!-- SKILLS -->
     <section id="skills" class="section">
-        <div class="container" data-aos="fade-up">
-            <div class="section-title-box">
-                <h2 class="section-title">Skills</h2>
-            </div>
-
-            <div class="skills-grid">
-                <div class="skill-card"><i class="fa-solid fa-file-excel"></i>
-                    <h4>Excel</h4>
-                </div>
-                <div class="skill-card"><i class="fa-solid fa-database"></i>
-                    <h4>SQL</h4>
-                </div>
-                <div class="skill-card"><i class="fa-solid fa-chart-line"></i>
-                    <h4>Power BI</h4>
-                </div>
-                <div class="skill-card"><i class="fa-solid fa-chart-line"></i>
-                    <h4>Tableau</h4>
-                </div>
-                <div class="skill-card"><i class="fa-solid fa-chart-line"></i>
-                    <h4>Looker Studio</h4>
-                </div>
-                <div class="skill-card"><i class="fa-solid fa-chart-pie"></i>
-                    <h4>Data Visualization</h4>
-                </div>
-                <div class="skill-card"><i class="fa-brands fa-python"></i>
-                    <h4>Python</h4>
-                </div>
-                <div class="skill-card"><i class="fa-solid fa-code"></i>
-                    <h4>Pandas / NumPy</h4>
-                </div>
-            </div>
+      <div class="container" data-aos="fade-up">
+        <div class="section-title-box">
+          <h2 class="section-title">Skills</h2>
         </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fa-solid fa-file-excel"></i>
+            <h4>Excel</h4>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-database"></i>
+            <h4>SQL</h4>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-chart-line"></i>
+            <h4>Power BI</h4>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-chart-line"></i>
+            <h4>Tableau</h4>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-chart-line"></i>
+            <h4>Looker Studio</h4>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-chart-pie"></i>
+            <h4>Data Visualization</h4>
+          </div>
+          <div class="skill-card">
+            <i class="fa-brands fa-python"></i>
+            <h4>Python</h4>
+          </div>
+          <div class="skill-card">
+            <i class="fa-solid fa-code"></i>
+            <h4>Pandas / NumPy</h4>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects" class="section">
-        <div class="container" data-aos="fade-up">
-            <div class="section-title-box">
-                <h2 class="section-title">Projects</h2>
-            </div>
-
-            <div class="projects-grid home-grid" id="homeProjects">
-                <!-- Projects will be injected by JS -->
-            </div>
-
-            <div class="see-more-wrap">
-                <a class="btn btn-primary see-more-btn" href="projects.html">See More Projects</a>
-            </div>
+      <div class="container" data-aos="fade-up">
+        <div class="section-title-box">
+          <h2 class="section-title">Projects</h2>
         </div>
+
+        <div class="projects-grid home-grid" id="homeProjects">
+          <!-- Projects will be injected by JS -->
+        </div>
+
+        <div class="see-more-wrap">
+          <a class="btn btn-primary see-more-btn" href="projects.html"
+            >See More Projects</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+
+    <section id="certificates" class="section">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title-box">
+          <h2 class="section-title">Certificates</h2>
+        </div>
+
+        <div class="projects-grid home-grid" id="homeCertificates">
+          <!-- Certificates will be injected by JS -->
+        </div>
+
+        <div class="see-more-wrap">
+          <a class="btn btn-primary see-more-btn" href="certificates.html"
+            >See More Certificates</a
+          >
+        </div>
+      </div>
     </section>
 
     <!-- ABOUT -->
     <section id="about" class="section">
-        <div class="container" data-aos="fade-up">
-            <div class="section-title-box">
-                <h2 class="section-title">About Me</h2>
-            </div>
-
-            <div class="about-wrapper">
-                <div class="about-text">
-                    <p>
-                        I’m <strong>Essam Ali Elsayed</strong>, a <strong>Data Analyst</strong> with hands-on experience
-                        in building dashboards, cleaning data, and uncovering insights that support business
-                        decision-making. I specialize in <strong>Python (pandas, NumPy)</strong>, <strong>SQL
-                            (PostgreSQL & MySQL)</strong>, and <strong>Power BI</strong>, focusing on transforming
-                        complex datasets into clear and meaningful visual stories. I enjoy automating repetitive
-                        reports, optimizing queries, and designing dashboards that highlight the most important trends
-                        and patterns. My goal is to turn data into actionable insights that help businesses grow,
-                        improve efficiency, and make smarter decisions.
-                    </p>
-
-                </div>
-
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <h3>5+</h3>
-                        <p>Real-world Dashboards</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>1+</h3>
-                        <p>Years Experience</p>
-                    </div>
-                    <div class="stat-card">
-                        <h3>100k+</h3>
-                        <p>Records Processed</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container" data-aos="fade-up">
+        <div class="section-title-box">
+          <h2 class="section-title">About Me</h2>
         </div>
+
+        <div class="about-wrapper">
+          <div class="about-text">
+            <p>
+              I’m <strong>Essam Ali Elsayed</strong>, a
+              <strong>Data Analyst</strong> with hands-on experience in building
+              dashboards, cleaning data, and uncovering insights that support
+              business decision-making. I specialize in
+              <strong>Python (pandas, NumPy)</strong>,
+              <strong>SQL (PostgreSQL & MySQL)</strong>, and
+              <strong>Power BI</strong>, focusing on transforming complex
+              datasets into clear and meaningful visual stories. I enjoy
+              automating repetitive reports, optimizing queries, and designing
+              dashboards that highlight the most important trends and patterns.
+              My goal is to turn data into actionable insights that help
+              businesses grow, improve efficiency, and make smarter decisions.
+            </p>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-card">
+              <h3>5+</h3>
+              <p>Real-world Dashboards</p>
+            </div>
+            <div class="stat-card">
+              <h3>1+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-card">
+              <h3>100k+</h3>
+              <p>Records Processed</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section">
-        <div class="container" data-aos="fade-up">
-            <div class="section-title-box">
-                <h2 class="section-title">Contact</h2>
-            </div>
-
-            <div class="contact-grid">
-                <a class="contact-card" href="https://www.linkedin.com/in/essam-ali-07a89a383" target="_blank">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <h4>LinkedIn</h4>
-                </a>
-
-                <a class="contact-card" href="https://github.com/essam1212" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                    <h4>GitHub</h4>
-                </a>
-
-                <a class="contact-card" href="https://mail.google.com/mail/?view=cm&to=essam5ali2000@gmail.com"
-                    target="_blank">
-                    <i class="fa-solid fa-envelope"></i>
-                    <h4>Email</h4>
-                </a>
-
-                <a class="contact-card" href="https://wa.me/201098820877" target="_blank">
-                    <i class="fa-solid fa-phone"></i>
-                    <h4>WhatsApp</h4>
-                </a>
-            </div>
+      <div class="container" data-aos="fade-up">
+        <div class="section-title-box">
+          <h2 class="section-title">Contact</h2>
         </div>
+
+        <div class="contact-grid">
+          <a
+            class="contact-card"
+            href="https://www.linkedin.com/in/essam-ali-07a89a383"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+            <h4>LinkedIn</h4>
+          </a>
+
+          <a
+            class="contact-card"
+            href="https://github.com/essam1212"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+            <h4>GitHub</h4>
+          </a>
+
+          <a
+            class="contact-card"
+            href="https://mail.google.com/mail/?view=cm&to=essam5ali2000@gmail.com"
+            target="_blank"
+          >
+            <i class="fa-solid fa-envelope"></i>
+            <h4>Email</h4>
+          </a>
+
+          <a
+            class="contact-card"
+            href="https://wa.me/201098820877"
+            target="_blank"
+          >
+            <i class="fa-solid fa-phone"></i>
+            <h4>WhatsApp</h4>
+          </a>
+        </div>
+      </div>
     </section>
 
     <button id="topBtn" class="top-btn" title="Back to top">
-        <i class="fa-solid fa-arrow-up"></i>
+      <i class="fa-solid fa-arrow-up"></i>
     </button>
 
     <footer class="site-footer">
-        <div class="container">
-            <p>© <span id="year"></span> Essam Ali Elsayed — All rights reserved.</p>
-        </div>
+      <div class="container">
+        <p>
+          © <span id="year"></span> Essam Ali Elsayed — All rights reserved.
+        </p>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>

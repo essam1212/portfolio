@@ -1,4 +1,3 @@
-// ...existing code...
 document.addEventListener('DOMContentLoaded', () => {
     AOS.init({ duration: 700, once: true });
 
@@ -145,6 +144,123 @@ document.addEventListener('DOMContentLoaded', () => {
         },
 
     ];
+
+    // --- Certificates data + rendering (new) ---
+    const certificatesData = [
+   
+        {
+            title: "Customer Analytics in Python",
+            issuer: "365datascience",
+            date: "2025",
+            link: "https://learn.365datascience.com/c/8c882600ee/",
+            thumb: "imgs/Customer Analytics in Python.png"
+        },
+        {
+            title: "Data Ingestion with Pandas",
+            issuer: "365datascience",
+            date: "2025",
+            link: "https://learn.365datascience.com/c/f1bab5aec6/",
+            thumb: "imgs/Data Ingestion with Pandas.png"
+        },
+        {
+            title: "Introduction to DAX",
+            issuer: "365datascience",
+            date: "2025",
+            link: "https://learn.365datascience.com/c/d056118574/",
+            thumb: "imgs/Introduction to DAX.png"
+        },
+        {
+            title: "Power Query and Data Modeling",
+            issuer: "365datascience",
+            date: "2025",
+            link: "https://learn.365datascience.com/c/cb952408c5/",
+            thumb: "imgs/Power Query and Data Modeling.png"
+        },
+        {
+            title: "Time Series Analysis with Python",
+            issuer: "365datascience",
+            date: "2025",
+            link: "https://learn.365datascience.com/c/322b57392c/",
+            thumb: "imgs/Time Series Analysis with Python.png"
+        },
+        {
+            title: "Advanced Microsoft Excel",
+            issuer: "365datascience",
+            date: "2025",
+            link: "https://learn.365datascience.com/c/fc61e269a0/",
+            thumb: "imgs/Advanced Microsoft Excel.png"
+        },
+    ];
+
+    // If on certificates page: render certificates with pagination
+    if (document.getElementById('certificatesGrid')) {
+        const certs = [...certificatesData];
+        const pageSizeCerts = 20;
+        const gridCert = document.getElementById('certificatesGrid');
+        const paginationCert = document.getElementById('certificatesPagination');
+
+        function renderCertPage(page = 1) {
+            gridCert.innerHTML = '';
+            const start = (page - 1) * pageSizeCerts;
+            const items = certs.slice(start, start + pageSizeCerts);
+            items.forEach((c, idx) => {
+                const a = document.createElement('a');
+                a.className = 'project-card';
+                a.href = c.link || '#';
+                a.target = '_blank';
+                a.setAttribute('data-aos', 'fade-up');
+                a.setAttribute('data-aos-delay', (idx % pageSizeCerts) * 50);
+                a.innerHTML = `
+                    <div class="project-thumb" style="background-image:url('${c.thumb}')"></div>
+                    <div class="project-body">
+                        <h3>${c.title}</h3>
+                        <p>${c.issuer} • ${c.date}</p>
+                    </div>
+                `;
+                gridCert.appendChild(a);
+            });
+
+            // pagination controls
+            if (paginationCert) {
+                paginationCert.innerHTML = '';
+                const pages = Math.ceil(certs.length / pageSizeCerts);
+                if (pages > 1) {
+                    for (let i = 1; i <= pages; i++) {
+                        const btn = document.createElement('button');
+                        btn.className = 'page-btn' + (i === page ? ' active' : '');
+                        btn.textContent = i;
+                        btn.addEventListener('click', () => renderCertPage(i));
+                        paginationCert.appendChild(btn);
+                    }
+                }
+            }
+        }
+
+        renderCertPage(1);
+    }
+
+    // Update home certificates on index if present
+    if (document.getElementById('homeCertificates')) {
+        const homeCerts = document.getElementById('homeCertificates');
+        homeCerts.innerHTML = '';
+        certificatesData.slice(0, 4).forEach((c, idx) => {
+            const a = document.createElement('a');
+            a.className = 'project-card';
+            a.href = c.link || '#';
+            a.target = '_blank';
+            a.setAttribute('data-aos', 'fade-up');
+            a.setAttribute('data-aos-delay', (idx + 1) * 50);
+            a.innerHTML = `
+                <div class="project-thumb" style="background-image:url('${c.thumb}')"></div>
+                <div class="project-body">
+                    <h3>${c.title}</h3>
+                    <p>${c.issuer} • ${c.date}</p>
+                </div>
+            `;
+            homeCerts.appendChild(a);
+        });
+    }
+    // --- end certificates block ---
 
     // If on projects.html: render projects with pagination
     if (document.getElementById('projectsGrid')) {

@@ -508,6 +508,30 @@ body.dark .theme-toggle i {
     color: #111;
 }
 
+/* Pagination buttons */
+.page-btn {
+    background: var(--panel);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text);
+    transition: all .18s;
+}
+
+.page-btn:hover {
+    background: var(--accent);
+    color: #111;
+    border-color: var(--accent);
+}
+
+.page-btn.active {
+    background: var(--accent);
+    color: #111;
+    border-color: var(--accent);
+}
+
 /* Responsive adjustments */
 @media (max-width: 1100px) {
     .hero-grid {
