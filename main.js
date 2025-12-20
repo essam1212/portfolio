@@ -101,6 +101,12 @@ document.addEventListener('DOMContentLoaded', () => {
     // Projects data and rendering (existing logic)
     const projectsData = [
         {
+            title: `commerce_dashboard <br> ( SQL & Power BI )`,
+            desc: `A comprehensive Retail Analytics Dashboard that visualizes sales performance, customer insights, and inventory operations to drive data-informed decision-making. <br> It features interactive KPIs and trend analysis across multiple regions and product categories using Power BI.`,
+            link:"",
+            thumb: "imgs/Overview.png"
+        },
+        {
             title: `Hospital Performance <br> ( SQL & Power BI )`,
             desc: `This project delivers a comprehensive $\text{Power BI}$ solution that transforms raw hospital data into actionable insights across Finance, Operations, and Patient Analytics. The goal is to optimize decision-making, enhance operational efficiency (e.g., workload and resource planning),
              and drive profitability by understanding key performance drivers and patient demographics.`,
