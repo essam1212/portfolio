@@ -101,9 +101,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Projects data and rendering (existing logic)
     const projectsData = [
         {
+            title: `Sales & Customer Performance Analysis<br> ( SQL & Power BI )`,
+            desc: `Developed a business-focused sales analytics dashboard using PostgreSQL and Power BI, emphasizing decision-oriented insights and clean data modeling.`,
+            link:"https://github.com/essam1212/Sales-Customer-Performance-Analysis/tree/main",
+            thumb: "imgs/Executive_Overview.png"
+        },
+        {
             title: `commerce_dashboard <br> ( SQL & Power BI )`,
             desc: `A comprehensive Retail Analytics Dashboard that visualizes sales performance, customer insights, and inventory operations to drive data-informed decision-making. <br> It features interactive KPIs and trend analysis across multiple regions and product categories using Power BI.`,
-            link:"",
+            link:"https://github.com/essam1212/commerce_dashboard/tree/main",
             thumb: "imgs/Overview.png"
         },
         {
